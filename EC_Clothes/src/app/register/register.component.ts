@@ -51,7 +51,7 @@ export class RegisterComponent {
     });
   }
 
-  login() {
+  register() {
     this.apiService.RegisterCustomer(this.model).then((result) => {
       if (result.code === 200) {
         this.tempData = result;

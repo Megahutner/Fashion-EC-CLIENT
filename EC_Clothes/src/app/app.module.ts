@@ -8,6 +8,8 @@ import {MatIconModule} from '@angular/material/icon'
 import { HttpClientModule } from '@angular/common/http';
 import { DxDataGridModule } from 'devextreme-angular';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { ColorPickerModule } from "ngx-color-picker";
+
 
 import {MatTableModule} from '@angular/material/table';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
@@ -18,6 +20,8 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {DragDropModule} from '@angular/cdk/drag-drop';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
 
 
 
@@ -70,7 +74,10 @@ import { CustomerLoginComponent } from './customer-login/customer-login.componen
     FlexLayoutModule,
     MatInputModule,
     MatButtonModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    DragDropModule,
+    MatButtonToggleModule,
+    ColorPickerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
